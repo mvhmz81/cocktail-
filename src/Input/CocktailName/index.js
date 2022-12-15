@@ -4,14 +4,15 @@
 
 // export default Input;
 import React, { useState } from "react";
-
-const Input = () => {
+//handleGetCocktail passed from parent in APP to child below so we can call it in handleSubmit
+const Input = ({ handleGetCocktail }) => {
   const [cocktail, setCocktail] = useState("");
   const handleChange = (e) => {
     setCocktail(e.target.value);
   };
   const handleSubmit = (e) => {
     e.preventDefault();
+    handleGetCocktail(cocktail);
   };
   return (
     <form onSubmit={handleSubmit}>
