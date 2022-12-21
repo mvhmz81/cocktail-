@@ -1,5 +1,13 @@
-// const Input = () => {
-//   return "hello ";
-// };
+const card = () => {
+  return (
+    <div>
+      <Card
+        Key={drinks.idDrink}
+        image={drinks.strDrinkThumb}
+        header={drinks.strDrink}
+      />
+    </div>
+  );
+};
 
-// export default Input;
+export default card;
