@@ -10,23 +10,23 @@ import Cardlist from "./ListItems/Cardlist";
 let URL = "http://www.thecocktaildb.com/api/json/v1/1/";
 function App() {
   const [cocktailData, setCocktailData] = useState([]);
+  async function getCocktail(name) {
+    const response = await fetch(URL + "search.php?s=" + name);
+    let data = await response.json();
+    console.log(data);
+    setCocktailData(data);
+  }
   useEffect(() => {
-    async function getCocktail(name) {
-      const response = await fetch(URL + "search.php?s=" + name);
-      let data = await response.json();
-      console.log(data);
-      setCocktailData(data);
-    }
     getCocktail();
   }, []);
-  getCocktail();
+
   async function getByIngriedients(alcohol) {
     const response = await fetch(URL + "filter.php?i=" + alcohol);
     let data = await response.json();
     console.log(data);
     return data;
   }
-  // getCocktail("margarita");
+
   return (
     <div className="App">
       {/* <Input /> */}
