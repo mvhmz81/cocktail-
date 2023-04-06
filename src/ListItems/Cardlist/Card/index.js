@@ -1,4 +1,4 @@
-const Card = ({ key, image, header, recipe, items }) => {
+const Card = ({ key, image, header, recipe, items, measures }) => {
   console.log();
   return (
     <div>
@@ -6,6 +6,7 @@ const Card = ({ key, image, header, recipe, items }) => {
       <h2>{header}</h2>
       <h3>{recipe}</h3>
       <h3>{items}</h3>
+      <h3>{measures}</h3>
     </div>
   );
 };
