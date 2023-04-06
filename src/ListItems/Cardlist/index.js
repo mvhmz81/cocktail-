@@ -3,7 +3,6 @@ const Cardlist = ({ getCocktailData }) => {
   console.log(getCocktailData);
   const drinks = getCocktailData.drinks ? getCocktailData.drinks : [];
   console.log(drinks);
-
   return (
     <div>
       {drinks.map((cocktail) => {
@@ -13,6 +12,7 @@ const Cardlist = ({ getCocktailData }) => {
             Key={cocktail.idDrink}
             image={cocktail.strDrinkThumb}
             header={cocktail.strDrink}
+            items={cocktail.strIngredient1}
             recipe={cocktail.strInstructions}
           />
         );
