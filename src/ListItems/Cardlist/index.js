@@ -13,8 +13,8 @@ const Cardlist = ({ getCocktailData }) => {
             Key={cocktail.idDrink}
             image={cocktail.strDrinkThumb}
             header={cocktail.strDrink}
-            items={cocktail.strIngredient1}
-            measures={cocktail.strMeasure1}
+            items={cocktail.strIngredient1} //how to get multiple strIngredient1
+            measures={cocktail.strMeasure1} //how to get multiple strMeasure1
             recipe={cocktail.strInstructions}
           />
         );

@@ -14,6 +14,7 @@ const Input = ({ handleGetCocktail }) => {
     e.preventDefault();
     handleGetCocktail(cocktail);
   };
+  //form details
   return (
     <form onSubmit={handleSubmit}>
       <label>
