@@ -4,14 +4,14 @@
 
 .app-container {
   max-width: auto; /* Adjust the max width to your preference */
-  margin: 0 auto; /* Center the container */
   padding: 20px; /* Add padding for spacing */
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between; /* Space cards evenly */
 }
 
 .card {
-  width: 30%; /* Adjust card width and margin for spacing */
+  width: calc(33.33% - 32px); /* Adjust card width and margin for spacing */
   border: 10px solid #fcf806;
   border-radius: 8px;
   padding: 16px;
