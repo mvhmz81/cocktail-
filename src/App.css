@@ -9,7 +9,6 @@
   flex-wrap: wrap;
   justify-content: space-between; /* Space cards evenly */
 }
-
 .card {
   width: calc(33.33% - 32px); /* Adjust card width and margin for spacing */
   border: 10px solid #fcf806;
