@@ -25,13 +25,17 @@ function App() {
     const response = await fetch(URL + "filter.php?i=" + alcohol);
     let data = await response.json();
     console.log(data);
-    return data;
+    setCocktailData(data);
   }
 
   return (
     <div className="App">
       <h1>Cocktail Nights Surprise</h1>
-      <img className="CocktailPic" src="cocktailPic" alt="cocktails" />
+      <img
+        className="CocktailPic"
+        src={require("../src/cocktailPic.jpg").default}
+        alt="cocktails"
+      />
 
       {/* <Input /> */}
       <CocktailName handleGetCocktail={getCocktail} />
@@ -43,3 +47,5 @@ function App() {
 }
 
 export default App;
+
+//create functionality so when search by ingredient you can click card and gives you drink details
