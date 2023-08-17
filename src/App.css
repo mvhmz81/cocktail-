@@ -1,11 +1,19 @@
 .App {
   background-color: #0e0a0a;
+  color: aliceblue;
+}
+.CocktailPic {
+  width: 50%;
+  height: auto;
+  border: 1px solid #ddd;
+  margin: 10px;
 }
 
 .app-container {
   max-width: auto; /* Adjust the max width to your preference */
   padding: 20px; /* Add padding for spacing */
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between; /* Space cards evenly */
 }
