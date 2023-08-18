@@ -1,12 +1,12 @@
 import Card from "./Card/cardIndex";
 
-const Cardlist = ({ getCocktailData, handleGetCocktail, cocktailSearch }) => {
+const Cardlist = ({ getCocktailData, handleGetCocktail, ingredientSearch }) => {
   // console.log(getCocktailData);
   const drinks = getCocktailData.drinks ? getCocktailData.drinks : [];
   // console.log(drinks);
   const handleCardClick = (strDrink) => {
-    console.log(strDrink);
     handleGetCocktail(strDrink);
+    //    console.log(strDrink);
   };
 
   return (
@@ -41,7 +41,7 @@ const Cardlist = ({ getCocktailData, handleGetCocktail, cocktailSearch }) => {
             onClick={() => {
               handleCardClick(cocktail.strDrink);
             }}
-            showButton={cocktailSearch}
+            showButton={ingredientSearch}
           />
         );
       })}

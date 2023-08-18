@@ -16,6 +16,7 @@ const Card = ({
   items,
   recipe,
   onClick,
+  setIngredientSearch,
   showButton,
   cocktail,
 }) => {

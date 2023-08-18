@@ -16,9 +16,9 @@ function App() {
   async function getCocktail(name) {
     const response = await fetch(URL + "search.php?s=" + name);
     let data = await response.json();
-    setIngredientSearch(false);
     console.log(data);
     setCocktailData(data);
+    setIngredientSearch(false);
   }
   useEffect(() => {
     getCocktail();
@@ -49,6 +49,7 @@ function App() {
         getCocktailData={cocktailData}
         handleGetCocktail={getCocktail}
         cocktailSearch={getByIngriedients}
+        ingredientSearch={ingredientSearch}
       />
     </div>
   );
