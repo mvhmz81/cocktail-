@@ -4,16 +4,19 @@ import "./App.css";
 import CocktailName from "./Input/CocktailName";
 import Ingriedients from "./Input/Ingriedients";
 // import ListItems from "./ListItems";
-import Cardlist from "./ListItems/Cardlist";
+import Cardlist from "./ListItems/Cardlist/cardlistIndex";
 // import Card from "./ListItems/Cardlist/Card";
 import "../src/cocktailPic.jpg";
 
 let URL = "http://www.thecocktaildb.com/api/json/v1/1/";
 function App() {
   const [cocktailData, setCocktailData] = useState([]);
+  const [ingredientSearch, setIngredientSearch] = useState(false);
+
   async function getCocktail(name) {
     const response = await fetch(URL + "search.php?s=" + name);
     let data = await response.json();
+    setIngredientSearch(false);
     console.log(data);
     setCocktailData(data);
   }
@@ -24,6 +27,7 @@ function App() {
   async function getByIngriedients(alcohol) {
     const response = await fetch(URL + "filter.php?i=" + alcohol);
     let data = await response.json();
+    setIngredientSearch(true);
     console.log(data);
     setCocktailData(data);
   }
@@ -41,7 +45,11 @@ function App() {
       <CocktailName handleGetCocktail={getCocktail} />
       <Ingriedients handleGetByIngriedient={getByIngriedients} />
       {/* <ListItems /> */}
-      <Cardlist getCocktailData={cocktailData} />
+      <Cardlist
+        getCocktailData={cocktailData}
+        handleGetCocktail={getCocktail}
+        cocktailSearch={getByIngriedients}
+      />
     </div>
   );
 }

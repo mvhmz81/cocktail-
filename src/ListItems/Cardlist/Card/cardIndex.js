@@ -10,7 +10,15 @@
 //     </div>
 //   );
 // };
-const Card = ({ image, header, items, recipe }) => {
+const Card = ({
+  image,
+  header,
+  items,
+  recipe,
+  onClick,
+  showButton,
+  cocktail,
+}) => {
   return (
     <div className="card">
       <h2 className="card-header">{header}</h2>
@@ -21,6 +29,9 @@ const Card = ({ image, header, items, recipe }) => {
         ))}
       </ul>
       <p className="card-recipe">{recipe}</p>
+      {showButton && (
+        <button onClick={() => onClick(cocktail.strDrink)}>Get Cocktail</button>
+      )}
     </div>
   );
 };
