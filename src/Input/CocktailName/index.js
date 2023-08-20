@@ -16,7 +16,7 @@ const Input = ({ handleGetCocktail }) => {
   };
   //form details
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="form" onSubmit={handleSubmit}>
       <label>
         <input
           placeholder="Cocktail Name"

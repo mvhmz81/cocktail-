@@ -1,24 +1,46 @@
 .App {
+  font: 5em sans-serif;
   background-color: #0e0a0a;
   color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /*takes up 100% view point*/
 }
-.CocktailPic {
+.cocktailPic {
   width: 50%;
   height: auto;
-  border: 1px solid #ddd;
+  border: 10px solid #ebd913;
   margin: 10px;
+}
+.form-container {
+  width: 50%; /* adjusts width to container as needed*/
+  margin: auto; /*centers and gives margin*/
+}
+input {
+  width: 15rem;
+  height: auto;
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 0.4rem;
+  border: 2px solid #ebd913;
+  background: var(--background-color);
+  color: inherit;
 }
 
 .app-container {
-  max-width: auto; /* Adjust the max width to your preference */
+  max-width: 100%; /* Adjust the max width for cards */
   padding: 20px; /* Add padding for spacing */
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between; /* Space cards evenly */
+  align-content: center;
 }
 .card {
-  width: calc(33.33% - 32px); /* Adjust card width and margin for spacing */
+  width: calc(
+    33.33% - 32px
+  ); /* Adjust card width and margin for spacing ie subtarcting the 32 from the margin requirement below */
   border: 10px solid #fcf806;
   border-radius: 8px;
   padding: 16px;
@@ -35,7 +57,7 @@
 }
 
 .card-image {
-  width: 50%; /* Adjust image width in pixels */
+  width: 50%; /* Adjust image width in % */
   height: auto;
   border-radius: 4px;
   margin-right: auto;

@@ -6,7 +6,7 @@ import Ingriedients from "./Input/Ingriedients";
 // import ListItems from "./ListItems";
 import Cardlist from "./ListItems/Cardlist/cardlistIndex";
 // import Card from "./ListItems/Cardlist/Card";
-import "../src/cocktailPic.jpg";
+import cocktailPic from "../src/cocktailPic.jpg";
 
 let URL = "http://www.thecocktaildb.com/api/json/v1/1/";
 function App() {
@@ -35,11 +35,7 @@ function App() {
   return (
     <div className="App">
       <h1>Cocktail Nights Surprise</h1>
-      <img
-        className="CocktailPic"
-        src={require("../src/cocktailPic.jpg").default}
-        alt="cocktails"
-      />
+      <img className="cocktailPic" src={cocktailPic} alt="cocktails" />
 
       {/* <Input /> */}
       <CocktailName handleGetCocktail={getCocktail} />
