@@ -35,7 +35,7 @@ function App() {
   return (
     <div className="App">
       <h1>MixologyHub: </h1>
-      <h2>Cocktail Recipes & Ingredients</h2>
+      <h2 className="secondaryTitle">Cocktail Recipes & Ingredients</h2>
       <div className="cocktail-party">
         <div className="green-drink">
           <div className="juice"></div>

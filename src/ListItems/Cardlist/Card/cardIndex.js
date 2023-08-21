@@ -23,16 +23,22 @@ const Card = ({
   return (
     <div className="card">
       <h2 className="card-header">{header}</h2>
-      <img src={image} alt={header} className="card-image" />
-      <ul className="card-items">
-        {items.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
-      <p className="card-recipe">{recipe}</p>
-      {showButton && (
-        <button onClick={() => onClick(cocktail.strDrink)}>Get Cocktail</button>
-      )}
+      <div className="insideCard">
+        <img src={image} alt={header} className="card-image" />
+        <ul className="card-items">
+          {items.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+      </div>
+      <div className="recipe">
+        <p className="card-recipe">{recipe}</p>
+        {showButton && (
+          <button onClick={() => onClick(cocktail.strDrink)}>
+            Get Cocktail
+          </button>
+        )}
+      </div>
     </div>
   );
 };

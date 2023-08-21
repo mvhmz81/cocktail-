@@ -19,7 +19,7 @@ h1 {
   text-align: center;
   text-shadow: 0 1px 1px #fff;
 }
-h2 {
+.secondaryTitle {
   color: #ebd913;
   font-family: "Great Vibes", cursive;
   font-size: 100%;
@@ -59,7 +59,15 @@ input {
   justify-content: space-between; /* Space cards evenly */
   align-content: center;
 }
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
 .card {
+  max-height: 450px;
+  height: 450px;
   width: calc(
     33.33% - 32px
   ); /* Adjust card width and margin for spacing ie subtarcting the 32 from the margin requirement below */
@@ -70,6 +78,7 @@ input {
   display: flex;
   flex-direction: column;
   background-color: #0e0a0a;
+  overflow-y: scroll;
 }
 
 .card-divider {
@@ -77,9 +86,15 @@ input {
   flex-direction: row; /* Arrange heading, image, and ingredients in a row */
   align-items: center;
 }
-
+.insideCard {
+  display: flex;
+  flex-direction: row;
+}
+.recipe {
+  margin: 50px;
+}
 .card-image {
-  width: 50%; /* Adjust image width in % */
+  width: 30%; /* Adjust image width in % */
   height: auto;
   border-radius: 4px;
   margin-right: auto;
@@ -87,8 +102,8 @@ input {
 }
 
 .card-header {
-  font-size: 34px;
-  margin-bottom: 12px;
+  font-size: 32px;
+  /*margin-bottom: 12px;*/
   color: #fcf806;
   text-align: center;
 }
@@ -108,12 +123,12 @@ input {
 /* CSS for animation*/
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 
-body {
+/*body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-}
+}*/
 
 .cocktail-party {
   position: relative;
