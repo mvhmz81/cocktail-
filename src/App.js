@@ -34,12 +34,22 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Cocktail Nights Surprise</h1>
-      <img className="cocktailPic" src={cocktailPic} alt="cocktails" />
-
+      <h1>MixologyHub: </h1>
+      <h2>Cocktail Recipes & Ingredients</h2>
+      <div className="cocktail-party">
+        <div className="green-drink">
+          <div className="juice"></div>
+        </div>
+        <div className="martini">
+          <div className="glass"></div>
+          <div className="olives"></div>
+        </div>
+        <div className="whiskey"></div>
+      </div>
       {/* <Input /> */}
       <CocktailName handleGetCocktail={getCocktail} />
       <Ingriedients handleGetByIngriedient={getByIngriedients} />
+      <img className="cocktailPic" src={cocktailPic} alt="cocktails" />
       {/* <ListItems /> */}
       <Cardlist
         getCocktailData={cocktailData}
