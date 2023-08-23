@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import "./movingCocktail.css";
 // import Input from "./Input";
 import CocktailName from "./Input/CocktailName";
 import Ingriedients from "./Input/Ingriedients";
