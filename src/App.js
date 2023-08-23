@@ -34,8 +34,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1>MixologyHub: </h1>
-      <h2 className="secondaryTitle">Cocktail Recipes & Ingredients</h2>
+      <div className="title">
+        <h1>MixologyHub: </h1>
+        <h2>Cocktail Recipes & Ingredients</h2>
+      </div>
       <div className="cocktail-party">
         <div className="green-drink">
           <div className="juice"></div>

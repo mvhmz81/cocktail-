@@ -8,21 +8,10 @@
   justify-content: center;
   min-height: 100vh; /*takes up 100% view point*/
 }
-h1 {
+.title {
   color: #ebd913;
   font-family: "Great Vibes", cursive;
-  font-size: 150%;
-  line-height: 160px;
-  font-weight: normal;
-  margin-bottom: 0px;
-  margin-top: 40px;
-  text-align: center;
-  text-shadow: 0 1px 1px #fff;
-}
-.secondaryTitle {
-  color: #ebd913;
-  font-family: "Great Vibes", cursive;
-  font-size: 100%;
+  font-size: 90%;
   line-height: 160px;
   font-weight: normal;
   margin-bottom: 0px;
@@ -78,7 +67,7 @@ input {
   display: flex;
   flex-direction: column;
   background-color: #0e0a0a;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .card-divider {
@@ -91,33 +80,46 @@ input {
   flex-direction: row;
 }
 .recipe {
-  margin: 50px;
+  margin: 20px;
 }
 .card-image {
-  width: 30%; /* Adjust image width in % */
+  width: 90%; /* Adjust image width in % */
   height: auto;
+  align-items: center;
   border-radius: 4px;
   margin-right: auto;
   margin-left: auto;
 }
+.card-image.with-recipe {
+  width: 30%; /* Adjusted width when recipe is present */
+}
 
 .card-header {
   font-size: 32px;
-  /*margin-bottom: 12px;*/
+  margin: 2px;
+  padding-bottom: 20px;
   color: #fcf806;
   text-align: center;
+}
+/*added to allow the text to change font if greater than 20 characters preventing
+triple line headers*/
+.card-header.adjustable {
+  font-size: calc(2vw + 4px);
+}
+.card-header-wrapper {
+  font-size: calc(2vw + 4px);
 }
 
 .card-items {
   font-size: 16px;
-  margin-bottom: 12px;
+  margin-bottom: 2px;
   color: rgb(248, 250, 252);
 }
 
 .card-recipe {
   font-size: 18px;
   color: rgb(248, 250, 252);
-  margin-top: auto; /* Push recipe to the bottom of the card */
+  margin: 2px; /* Push recipe to the bottom of the card */
 }
 
 /* CSS for animation*/
