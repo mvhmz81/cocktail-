@@ -37,7 +37,7 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <div className="header-continer">
+      <div className="header-container">
         <div className="title">
           <h1>MixologyHub: </h1>
           <h2>Cocktail Recipes & Ingredients</h2>

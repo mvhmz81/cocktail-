@@ -8,15 +8,19 @@
   min-height: 100vh; /*takes up 100% view point*/
   min-width: 100vh;
 }
+.header-container {
+  width: 100%;
+}
 .title {
   color: #ebd913;
   font-family: "Great Vibes", cursive;
-  font-size: 6vw;
+  font-size: 5vw;
   line-height: 100px;
   font-weight: normal;
   margin-bottom: 0px;
   margin-top: 0px;
   text-align: center;
+  white-space: nowrap;
   text-shadow: 0 1px 1px #fff;
 }
 .animation-container {
