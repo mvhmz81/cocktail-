@@ -32,22 +32,28 @@ function App() {
     console.log(data);
     setCocktailData(data);
   }
-
+  useEffect(() => {
+    getByIngriedients();
+  }, []);
   return (
     <div className="App">
-      <div className="title">
-        <h1>MixologyHub: </h1>
-        <h2>Cocktail Recipes & Ingredients</h2>
+      <div className="header-continer">
+        <div className="title">
+          <h1>MixologyHub: </h1>
+          <h2>Cocktail Recipes & Ingredients</h2>
+        </div>
       </div>
-      <div className="cocktail-party">
-        <div className="green-drink">
-          <div className="juice"></div>
+      <div className="animation-container">
+        <div className="cocktail-party">
+          <div className="green-drink">
+            <div className="juice"></div>
+          </div>
+          <div className="martini">
+            <div className="glass"></div>
+            <div className="olives"></div>
+          </div>
+          <div className="whiskey"></div>
         </div>
-        <div className="martini">
-          <div className="glass"></div>
-          <div className="olives"></div>
-        </div>
-        <div className="whiskey"></div>
       </div>
       {/* <Input /> */}
       <CocktailName handleGetCocktail={getCocktail} />

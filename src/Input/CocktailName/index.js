@@ -25,7 +25,7 @@ const Input = ({ handleGetCocktail }) => {
           onChange={handleChange}
         />
       </label>
-      <input type="submit" value="SEARCH" />
+      <input type="submit" value="SEARCH" className="getCocktailButton" />
     </form>
   );
 };

@@ -24,7 +24,7 @@ const Input = ({ handleGetByIngriedient }) => {
           onChange={(e) => setIngriedient(e.target.value)}
         />
       </label>
-      <input type="submit" value="SEARCH" />
+      <input type="submit" value="SEARCH" className="getCocktailButton" />
     </form>
   );
 };

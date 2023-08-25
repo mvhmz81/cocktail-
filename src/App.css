@@ -1,43 +1,49 @@
 .App {
-  font: 5em sans-serif;
+  font: 4em sans-serif;
   background-color: #0e0a0a;
-  color: aliceblue;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh; /*takes up 100% view point*/
+  min-width: 100vh;
 }
 .title {
   color: #ebd913;
   font-family: "Great Vibes", cursive;
-  font-size: 90%;
-  line-height: 160px;
+  font-size: 8vw;
   font-weight: normal;
   margin-bottom: 0px;
-  margin-top: 40px;
+  margin-top: 10%;
   text-align: center;
   text-shadow: 0 1px 1px #fff;
 }
+.animation-container {
+  display: inherit;
+}
 .cocktailPic {
-  width: 50%;
+  width: 50vh;
   height: auto;
   border: 10px solid #ebd913;
   margin: 10px;
 }
 .form-container {
-  width: 50%; /* adjusts width to container as needed*/
+  width: fit-content; /* adjusts width to container as needed*/
   margin: auto; /*centers and gives margin*/
 }
 input {
-  width: 15rem;
-  height: auto;
-  padding: 5px;
-  font-size: 20px;
-  border-radius: 0.4rem;
-  border: 2px solid #ebd913;
+  box-shadow: 0px 1px 0px 0px #fff6af;
   background: var(--background-color);
   color: inherit;
+  border-radius: 10px;
+  border: 1px solid #ffaa22;
+  display: inline-block;
+  cursor: pointer;
+  color: #333333;
+  font-family: Verdana;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 32px;
 }
 
 .app-container {
