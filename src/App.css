@@ -11,10 +11,11 @@
 .title {
   color: #ebd913;
   font-family: "Great Vibes", cursive;
-  font-size: 8vw;
+  font-size: 6vw;
+  line-height: 100px;
   font-weight: normal;
   margin-bottom: 0px;
-  margin-top: 10%;
+  margin-top: 0px;
   text-align: center;
   text-shadow: 0 1px 1px #fff;
 }
