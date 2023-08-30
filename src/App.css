@@ -1,3 +1,17 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  overflow: clip;
+  contain: content;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+}
 .App {
   background-color: #0e0a0a;
   display: flex;
