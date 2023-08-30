@@ -57,6 +57,9 @@ input {
   justify-content: space-between; /* Space cards evenly */
   align-content: center;
 }
+.card-list {
+  display: flex;
+}
 .card-container {
   display: flex;
   flex-direction: row;
@@ -67,7 +70,8 @@ input {
 .card {
   max-height: 450px;
   height: 450px;
-  width: calc(
+  width: 100%;
+  /*width: calc(
     33% - 32px
   ); /* Adjust card width and margin for spacing ie subtarcting the 32 from the margin requirement below */
   border: 10px solid #fcf806;

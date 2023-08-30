@@ -17,7 +17,7 @@ function App() {
   async function getCocktail(name) {
     const response = await fetch(URL + "search.php?s=" + name);
     let data = await response.json();
-    console.log(data);
+    /*console.log(data);*/
     setCocktailData(data);
     setIngredientSearch(false);
   }
@@ -29,7 +29,7 @@ function App() {
     const response = await fetch(URL + "filter.php?i=" + alcohol);
     let data = await response.json();
     setIngredientSearch(true);
-    console.log(data);
+    /*console.log(data);*/
     setCocktailData(data);
   }
   useEffect(() => {

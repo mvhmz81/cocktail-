@@ -10,7 +10,7 @@ const Cardlist = ({ getCocktailData, handleGetCocktail, ingredientSearch }) => {
   };
 
   return (
-    <div>
+    <div className="card-list">
       {drinks.map((cocktail) => {
         //console.log("indeg: ", cocktail);
         const ingredients = Object.entries(cocktail).reduce(
