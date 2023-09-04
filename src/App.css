@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Dancing+Script:wght@700&family=Orbitron:wght@800&family=Qwitcher+Grypen:wght@700&display=swap");
 html,
 body {
   height: 100%;
@@ -5,15 +6,18 @@ body {
   overflow: hidden;
   overflow: clip;
   contain: content;
+  background-image: url("cocktailBackground.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #000;
 }
 .App {
-  background-color: #0e0a0a;
+  /*background-color: #0e0a0a;*/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,17 +27,19 @@ body {
 }
 .header-container {
   width: 100%;
+  font-family: "Orbitron", sans-serif;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 .title {
   color: #ebd913;
-  font-family: "Black Ops One", cursive;
   font-size: calc(3vw + 4px);
   line-height: 100px;
   margin-bottom: 0px;
   margin-top: 0px;
   text-align: center;
   white-space: wrap;
-  text-shadow: 0 1px 1px #fff;
+  text-shadow: 0 10px 10px black;
 }
 .animation-container {
   display: inherit;
@@ -47,22 +53,29 @@ body {
 .form-container {
   width: fit-content; /* adjusts width to container as needed*/
   margin: auto; /*centers and gives margin*/
+  justify-content: center;
+}
+.input {
+  display: grid;
+  justify-items: center;
 }
 input {
   box-shadow: 0px 1px 0px 0px #fff6af;
-  background: var(--background-color);
-  color: inherit;
+  background: black;
   border-radius: 10px;
-  border: 1px solid #ffaa22;
+  border: 3px solid #ffaa22;
   display: inline-block;
   cursor: pointer;
-  color: #333333;
+  color: #d2f206;
   font-family: Verdana;
   font-size: 20px;
   font-weight: bold;
   padding: 12px 32px;
 }
-
+.error-message {
+  color: red;
+  font-size: 16px;
+}
 .app-container {
   max-width: 100%; /* Adjust the max width for cards */
   padding: 20px; /* Add padding for spacing */
