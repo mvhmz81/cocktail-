@@ -18,7 +18,7 @@ function App() {
 
   useEffect(() => {
     // Define the default URL for random cocktails
-    const defaultURL = "http://www.thecocktaildb.com/api/json/v1/1/random.php";
+    const defaultURL = URL + "random.php";
 
     async function getRandomCocktail() {
       try {
