@@ -84,7 +84,7 @@ function App() {
           <h2>Cocktail Recipes & Ingredients</h2>
         </div>
       </div>
-      <div className="animation-container">
+      {/*<div className="animation-container">
         <div className="cocktail-party">
           <div className="green-drink">
             <div className="juice"></div>
@@ -95,7 +95,7 @@ function App() {
           </div>
           <div className="whiskey"></div>
         </div>
-      </div>
+      </div>*/}
       <div className="input">
         {/* <Input /> */}
         <CocktailName handleGetCocktail={getCocktail} />
