@@ -11,11 +11,13 @@ body {
   background-attachment: fixed;
 }
 .App {
+  /*background-color: #0e0a0a;*/
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: auto; /*takes up 100% view point*/
+  min-height: 100vh; /*takes up 100% view point*/
+  min-width: 100vh;
 }
 .header-container {
   width: 100%;
@@ -75,23 +77,27 @@ input {
   flex-wrap: wrap;
   justify-content: space-between; /* Space cards evenly */
   align-content: center;
-  overflow-y: auto;
 }
 .card-list {
   display: flex;
 }
 .card-container {
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
 }
 .card {
   height: 400px;
-  flex-basis: calc(33.33% - 20px);
+  flex-basis: calc(
+    33.33% - 20px
+  ); /*Adjust card width and margin for spacing ie subtarcting the 32 from the margin requirement below */
   border: 10px solid #fcf806;
   border-radius: 5%;
   padding: 10px;
-  margin: 10px auto;
+  margin: 10px;
   background-color: #0e0a0a;
+  overflow-y: auto;
 }
 
 .insideCard {
@@ -102,16 +108,17 @@ input {
   margin: 20px;
 }
 .card-image {
-  max-width: 90%; /* Adjust image width in % */
-  max-height: 90%;
+  width: 90%; /* Adjust image width in % */
+  height: auto;
   align-items: center;
   border-radius: 4px;
 }
 .card-image.with-recipe {
   width: 50%; /* Adjusted width when recipe is present */
 }
+
 .card-header {
-  font-size: 40px;
+  font-size: 32px;
   margin: 2px;
   padding-bottom: 20px;
   color: #fcf806;
@@ -133,6 +140,7 @@ triple line headers*/
   list-style-type: none; /* Remove bullets */
   padding: 5%;
 }
+
 .card-recipe {
   font-size: 18px;
   color: rgb(248, 250, 252);
