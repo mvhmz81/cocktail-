@@ -26,3 +26,4 @@ Final chage was to CSS design to bring it forward in terms of looks
 there is still more that can be done but to allow for more learning i will move on
 
 the vite and bootstrap is not working
+i think the system is corrupted and so i need to delete all
