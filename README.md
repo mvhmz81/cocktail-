@@ -24,3 +24,6 @@ The third was to link an ingriedient search to pull the selected cocktail
 Final chage was to CSS design to bring it forward in terms of looks
 
 there is still more that can be done but to allow for more learning i will move on
+
+
+the vite and boot starpp is not workingn
