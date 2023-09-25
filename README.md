@@ -25,5 +25,4 @@ Final chage was to CSS design to bring it forward in terms of looks
 
 there is still more that can be done but to allow for more learning i will move on
 
-
-the vite and boot starpp is not workingn
+the vite and bootstrap is not working
