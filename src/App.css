@@ -3,6 +3,7 @@ html,
 body {
   height: auto;
   margin: 50;
+  justify-content: center;
   /*overflow: hidden;*/
   contain: content;
   background-image: url("cocktailBackground.png");
@@ -21,6 +22,24 @@ body {
   text-align: center;
   text-shadow: 0 10px 10px black;
 }
+
+.input {
+  display: grid;
+  justify-items: center;
+}
+input {
+  box-shadow: 0px 1px 0px 0px #fff6af;
+  background: black;
+  border-radius: 10px;
+  border: 3px solid #ffaa22;
+  display: inline-block;
+  cursor: pointer;
+  color: #d2f206;
+  font-family: Verdana;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 32px;
+}
 .card-list {
   display: flex;
   flex-wrap: wrap;
@@ -29,7 +48,7 @@ body {
   padding: 2px;
 }
 .card-container {
-  height: 1000px;
+  height: 600px;
   width: 33%;
 }
 .card {
@@ -46,35 +65,63 @@ body {
 .card-image {
   max-width: 50%; /* Adjust image width in % */
   align-items: center;
-  padding: 40px;
+  padding: 10px;
 }
 .recipe {
   margin: 20px;
 }
 .card-image.with-recipe {
-  width: 40%; /* Adjusted width when recipe is present */
+  width: 75%; /* Adjusted width when recipe is present */
 }
 .card-header {
-  font-size: 40px;
+  font-size: 3vw;
   margin: 2px;
   padding-bottom: 20px;
   color: #fcf806;
   text-align: center;
 }
 .card-items {
-  font-size: 1.875em;
+  font-size: 1.05vw;
   margin: 5px;
   list-style-type: none; /* Remove bullets */
-  padding: auto;
+  padding: 20px;
   align-items: center;
   color: #fcf806;
+  word-wrap: break-word;
 }
 .card-recipe {
-  font-size: 2.5em;
+  font-size: 1.5vw;
   color: rgb(248, 250, 252);
   margin: 5px; /* Push recipe to the bottom of the card */
   padding-bottom: 5px;
   font-style: oblique;
   font-weight: 200;
   color: #ebd913;
+  text-size-adjust: auto;
+}
+.getCocktailButton {
+  box-shadow: 0px 1px 0px 0px #fff6af;
+  background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+  background-color: #ffec64;
+  border-radius: 10px;
+  border: 1px solid #ffaa22;
+  display: inline-block;
+  cursor: pointer;
+  color: #333333;
+  font-family: Verdana;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 32px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffee66;
+}
+
+.getCocktailButton:hover {
+  background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+  background-color: #ffab23;
+}
+
+.getCocktailButton:active {
+  position: relative;
+  top: 1px;
 }
