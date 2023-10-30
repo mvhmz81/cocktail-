@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Dancing+Script:wght@700&family=Orbitron:wght@800&family=Qwitcher+Grypen:wght@700&display=swap");
+html,
+body {
+  height: auto;
+  margin: 50;
+  /*overflow: hidden;*/
+  contain: content;
+  background-image: url("cocktailBackground.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: auto; /*takes up 100% view point*/
+}
+.header-container {
+  width: 100%;
+  font-family: "Orbitron", sans-serif;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+.title {
+  color: #ebd913;
+  font-size: calc(3vw + 4px);
+  line-height: 100px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  text-align: center;
+  white-space: wrap;
+  text-shadow: 0 10px 10px black;
+}
+.animation-container {
+  display: inherit;
+}
+.cocktailPic {
+  width: 100vh;
+  height: auto;
+  /*border: 10px solid #ebd913;*/
+  margin: 10px;
+}
+.form-container {
+  width: fit-content; /* adjusts width to container as needed*/
+  margin: auto; /*centers and gives margin*/
+  justify-content: center;
+}
+.input {
+  display: grid;
+  justify-items: center;
+}
+input {
+  box-shadow: 0px 1px 0px 0px #fff6af;
+  background: black;
+  border-radius: 10px;
+  border: 3px solid #ffaa22;
+  display: inline-block;
+  cursor: pointer;
+  color: #d2f206;
+  font-family: Verdana;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 32px;
+}
+.error-message {
+  color: red;
+  font-size: 16px;
+}
+.app-container {
+  max-width: 100%; /* Adjust the max width for cards */
+  padding: 20px; /* Add padding for spacing */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Space cards evenly */
+  align-content: center;
+  overflow-y: auto;
+}
+.card-list {
+  display: flex;
+}
+.card-container {
+  height: 400px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.card {
+  height: 400px;
+  flex-basis: calc(33.33% - 20px);
+  border: 10px solid #fcf806;
+  border-radius: 5%;
+  padding: 10px;
+  margin: 10px auto;
+  background-color: #0e0a0a;
+}
+
+.insideCard {
+  display: flex;
+  flex-direction: row;
+}
+.recipe {
+  margin: 20px;
+}
+.card-image {
+  max-width: 200px; /* Adjust image width in % */
+  max-height: 400px;
+  align-items: center;
+  border-radius: 4px;
+}
+.card-image.with-recipe {
+  width: 50%; /* Adjusted width when recipe is present */
+}
+.card-header {
+  font-size: 40px;
+  margin: 2px;
+  padding-bottom: 20px;
+  color: #fcf806;
+  text-align: center;
+}
+/*added to allow the text to change font if greater than 20 characters preventing
+triple line headers*/
+.card-header.adjustable {
+  font-size: calc(2vw + 4px);
+}
+.card-header-wrapper {
+  font-size: calc(2vw + 4px);
+}
+
+.card-items {
+  font-size: 18px;
+  margin: 5px;
+  color: rgb(248, 250, 252);
+  list-style-type: none; /* Remove bullets */
+  padding: 5%;
+}
+.card-recipe {
+  font-size: 18px;
+  color: rgb(248, 250, 252);
+  margin: 5px; /* Push recipe to the bottom of the card */
+  padding-bottom: 5px;
+}
+
+.getCocktailButton {
+  box-shadow: 0px 1px 0px 0px #fff6af;
+  background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+  background-color: #ffec64;
+  border-radius: 10px;
+  border: 1px solid #ffaa22;
+  display: inline-block;
+  cursor: pointer;
+  color: #333333;
+  font-family: Verdana;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 32px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffee66;
+}
+
+.getCocktailButton:hover {
+  background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+  background-color: #ffab23;
+}
+
+.getCocktailButton:active {
+  position: relative;
+  top: 1px;
+}
