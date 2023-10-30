@@ -21,16 +21,22 @@ body {
   text-align: center;
   text-shadow: 0 10px 10px black;
 }
-.card-container {
+.card-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 2px;
   justify-content: space-between;
-  padding: 20px;
+  padding: 2px;
+}
+.card-container {
+  height: 1000px;
+  width: 33%;
 }
 .card {
   background-color: #000;
   border: 1px solid #ebd913;
+  width: 100%;
+  height: 100%;
 }
 .insideCard {
   display: flex;
@@ -38,15 +44,15 @@ body {
   flex-wrap: wrap;
 }
 .card-image {
-  max-width: 40%; /* Adjust image width in % */
+  max-width: 50%; /* Adjust image width in % */
   align-items: center;
-  border-radius: 4px;
+  padding: 40px;
 }
 .recipe {
   margin: 20px;
 }
 .card-image.with-recipe {
-  width: 10%; /* Adjusted width when recipe is present */
+  width: 40%; /* Adjusted width when recipe is present */
 }
 .card-header {
   font-size: 40px;
@@ -54,4 +60,21 @@ body {
   padding-bottom: 20px;
   color: #fcf806;
   text-align: center;
+}
+.card-items {
+  font-size: 1.875em;
+  margin: 5px;
+  list-style-type: none; /* Remove bullets */
+  padding: auto;
+  align-items: center;
+  color: #fcf806;
+}
+.card-recipe {
+  font-size: 2.5em;
+  color: rgb(248, 250, 252);
+  margin: 5px; /* Push recipe to the bottom of the card */
+  padding-bottom: 5px;
+  font-style: oblique;
+  font-weight: 200;
+  color: #ebd913;
 }
