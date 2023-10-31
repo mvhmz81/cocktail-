@@ -44,7 +44,8 @@ input {
   display: flex;
   flex-wrap: wrap;
   gap: 2px;
-  justify-content: space-between;
+  justify-content: center; /* Horizontally center the cards */
+  align-items: center; /* Vertically center the cards */
   padding: 2px;
 }
 .card-container {
@@ -60,7 +61,7 @@ input {
 .insideCard {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .card-image {
   max-width: 50%; /* Adjust image width in % */
@@ -81,7 +82,7 @@ input {
   text-align: center;
 }
 .card-items {
-  font-size: 1.05vw;
+  font-size: 1.25vw;
   margin: 5px;
   list-style-type: none; /* Remove bullets */
   padding: 20px;
@@ -90,7 +91,7 @@ input {
   word-wrap: break-word;
 }
 .card-recipe {
-  font-size: 1.5vw;
+  font-size: 1.75vw;
   color: rgb(248, 250, 252);
   margin: 5px; /* Push recipe to the bottom of the card */
   padding-bottom: 5px;
