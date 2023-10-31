@@ -12,6 +12,7 @@ const Input = ({ handleGetByIngriedient }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     handleGetByIngriedient(ingriedient);
+    setIngriedient("");
   };
 
   return (
@@ -21,6 +22,7 @@ const Input = ({ handleGetByIngriedient }) => {
           placeholder="Ingriedient"
           type="text"
           name="Ingriedient Input"
+          value={ingriedient}
           onChange={(e) => setIngriedient(e.target.value)}
         />
       </label>

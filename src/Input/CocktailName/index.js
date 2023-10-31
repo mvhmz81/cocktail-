@@ -13,6 +13,7 @@ const Input = ({ handleGetCocktail }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     handleGetCocktail(cocktail);
+    setCocktail("");
   };
   //form details
   return (
@@ -22,6 +23,7 @@ const Input = ({ handleGetCocktail }) => {
           placeholder="Cocktail Name"
           type="text"
           name="Cocktail Input"
+          value={cocktail}
           onChange={handleChange}
         />
       </label>

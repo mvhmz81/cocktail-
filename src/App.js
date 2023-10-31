@@ -49,13 +49,16 @@ function App() {
         throw new Error("Choose an option");
       }
       const data = await response.json();
+      if (data.drinks === null) {
+        throw new Error("No results found.");
+      }
       /*console.log(data);*/
       setCocktailData(data);
       setIngredientSearch(false);
       setError(null);
     } catch (error) {
-      console.error("An error occurred:", error);
-      setError("An error occurred while fetching data.");
+      alert("An error occurred this cocktail does not exist:", error);
+      setError(/*"An error occurred while fetching data."*/ error.message);
     }
   }
 
@@ -66,12 +69,18 @@ function App() {
         throw new Error("Choose an Ingriedient");
       }
       const data = await response.json();
+      if (data.ingriedients === null) {
+        throw new Error("No results found.");
+      }
       setIngredientSearch(true);
       /*console.log(data);*/
       setCocktailData(data);
       setError(null);
     } catch (error) {
-      console.error("An error occurred:", error);
+      alert(
+        "An error occurred no cocktails exist with that ingriedient:",
+        error
+      );
       setError("An error occurred while fetching data.");
     }
   }
