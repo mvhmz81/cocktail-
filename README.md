@@ -51,7 +51,7 @@ The CSS design went through multiple iterations to achieve the desired look and 
 
 ### Lighthouse performance
 
-Above 90% although due to multiple searchs and the random generator in action the performance is lower at 78 which will need to be improved.
+Above 90% although due to multiple searchs and the random generator in action the performance is lower at 80 which will need to be improved.
 
 ## Future Improvements
 
