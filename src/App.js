@@ -56,7 +56,7 @@ function App() {
       /*console.log(data);*/
       setCocktailData(data);
       setIngredientSearch(false);
-      setError(null);
+      setError(error);
     } catch (error) {
       alert("An error occurred this cocktail does not exist:", error);
       setError(/*"An error occurred while fetching data."*/ error.message);
