@@ -47,7 +47,11 @@ The application leverages the CocktailDB API to search for cocktail recipes. It 
 
 ### CSS Design
 
-The CSS design went through multiple iterations to achieve the desired look and feel. Learning to target specific components and understanding the CSS hierarchy was an important part of this project. The development process led to the creation of a well-structured CSS file.
+The CSS design went through multiple iterations to achieve the desired look and feel. From animated cocktails to the more stream lined image used. Learning to target specific components and understanding the CSS hierarchy was an important part of this project. The development process led to the creation of a well-structured CSS file.
+
+### Lighthouse performance
+
+Above 90% although due to multiple searchs and the random generator in action the performance is lower at 78 which will need to be improved.
 
 ## Future Improvements
 
