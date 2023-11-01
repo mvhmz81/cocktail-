@@ -33,6 +33,7 @@ function App() {
         setIngredientSearch(false);
         setError(null); // Clear any previous error
       } catch (error) {
+        // eslint-disable-next-line no-unused-vars
         console.error("An error occurred:", error);
         setError("An error occurred while fetching data.");
       }
