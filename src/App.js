@@ -9,7 +9,7 @@ import Cardlist from "./ListItems/Cardlist/cardlistIndex";
 // import Card from "./ListItems/Cardlist/Card";
 //import cocktailPic from "../src/cocktailPic.jpg";
 
-let URL = "http://www.thecocktaildb.com/api/json/v1/1/";
+let URL = "https://www.thecocktaildb.com/api/json/v1/1/";
 
 function App() {
   const [cocktailData, setCocktailData] = useState([]);
