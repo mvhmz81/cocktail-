@@ -73,24 +73,34 @@ input {
 /* Media query for medium screens */
 @media (min-width: 765px) and (max-width: 1024px) {
   .input {
-    /* Adjust the display or alignment for small screens */
-    display: grid;
-    justify-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .form {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+  }
+
+  .form label {
+    margin-right: 10px;
   }
 
   input {
-    /* Adjust padding or font size for small screens */
-    font-size: 14px;
-    padding: 5px 10px;
-    justify-content: center;
+    font-size: 14px !important;
+    padding: 5px 10px !important;
+    justify-content: center !important;
+    display: flex !important;
+    justify-content: space-between !important;
   }
   .getCocktailButton {
     font-size: 14px !important;
     padding: 5px 10px !important;
+    display: flex;
+    justify-content: center;
   }
   .card-container {
     width: 45% !important;
-    overflow-y: scroll;
   }
   .card-header {
     font-size: large !important;
@@ -104,9 +114,20 @@ input {
   }
 }
 
-/* Media query for large screens */
 @media (min-width: 1025px) {
-  /* Adjust input styles for large screens if needed */
+  .input {
+    display: flex;
+    justify-content: center;
+  }
+  .form {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+  }
+
+  .form label {
+    margin-right: 10px;
+  }
 }
 .card-list {
   display: flex;
