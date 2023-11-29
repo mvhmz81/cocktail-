@@ -40,6 +40,74 @@ input {
   font-weight: bold;
   padding: 12px 32px;
 }
+@media (max-width: 480px) {
+  .input {
+    /* Adjust the display or alignment for small screens */
+    display: grid;
+    justify-items: center;
+  }
+
+  input {
+    /* Adjust padding or font size for small screens */
+    font-size: 12px;
+    padding: 5px 10px;
+    justify-content: center;
+  }
+  .getCocktailButton {
+    font-size: 12px !important;
+    padding: 5px 10px !important;
+  }
+  .card-container {
+    width: 90% !important;
+    overflow-y: scroll;
+  }
+  .card-header,
+  .card-recipe {
+    font-size: medium !important;
+  }
+  .card-items {
+    font-size: small !important;
+  }
+}
+
+/* Media query for medium screens */
+@media (min-width: 765px) and (max-width: 1024px) {
+  .input {
+    /* Adjust the display or alignment for small screens */
+    display: grid;
+    justify-items: center;
+  }
+
+  input {
+    /* Adjust padding or font size for small screens */
+    font-size: 14px;
+    padding: 5px 10px;
+    justify-content: center;
+  }
+  .getCocktailButton {
+    font-size: 14px !important;
+    padding: 5px 10px !important;
+  }
+  .card-container {
+    width: 45% !important;
+    overflow-y: scroll;
+  }
+  .card-header {
+    font-size: large !important;
+  }
+  .card-items,
+  .card-recipe {
+    font-size: medium !important;
+  }
+  .insideCard {
+    flex-wrap: nowrap !important;
+  }
+}
+
+/* Media query for large screens */
+@media (min-width: 1025px) {
+  /* Adjust input styles for large screens if needed */
+}
 .card-list {
   display: flex;
   flex-wrap: wrap;
