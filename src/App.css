@@ -89,7 +89,7 @@ input {
   input {
     font-size: 14px !important;
     padding: 5px 10px !important;
-    justify-content: center !important;
+    justify-content: flex-start !important;
     display: flex !important;
     justify-content: space-between !important;
   }
