@@ -45,7 +45,6 @@ input {
     display: grid;
     justify-items: center;
   }
-
   input {
     /* Adjust padding or font size for small screens */
     font-size: 12px;
@@ -60,12 +59,12 @@ input {
     width: 90% !important;
     overflow-y: scroll;
   }
-  .card-header,
-  .card-recipe {
-    font-size: medium !important;
+  .card-header {
+    font-size: 6vw !important;
   }
-  .card-items {
-    font-size: small !important;
+  .card-items,
+  .card-recipe {
+    font-size: 4vw !important;
   }
 }
 
