@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Dancing+Script:wght@700&family=Orbitron:wght@800&family=Qwitcher+Grypen:wght@700&display=swap");
 html,
 body {
-  height: auto;
-  margin: 50;
+  min-height: 1000px;
   justify-content: center;
   /*overflow: hidden;*/
   contain: content;
@@ -38,7 +37,7 @@ input {
   font-family: Verdana;
   font-size: 20px;
   font-weight: bold;
-  padding: 12px 32px;
+  padding: 10px 32px;
 }
 @media (max-width: 480px) {
   .input {
@@ -71,10 +70,11 @@ input {
 }
 
 /* Media query for medium screens */
-@media (min-width: 765px) and (max-width: 1024px) {
+@media (min-width: 665px) and (max-width: 1024px) {
   .input {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
   }
   .form {
     display: flex;
@@ -87,14 +87,14 @@ input {
   }
 
   input {
-    font-size: 14px !important;
+    font-size: 12px !important;
     padding: 5px 10px !important;
     justify-content: flex- !important;
     display: flex !important;
     justify-content: space-between !important;
   }
   .getCocktailButton {
-    font-size: 14px !important;
+    font-size: 12px !important;
     padding: 5px 10px !important;
     display: flex;
     justify-content: center;
