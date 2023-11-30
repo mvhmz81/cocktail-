@@ -103,11 +103,11 @@ input {
     width: 45% !important;
   }
   .card-header {
-    font-size: large !important;
+    font-size: 3vw !important;
   }
   .card-items,
   .card-recipe {
-    font-size: medium !important;
+    font-size: 2vw !important;
   }
   .insideCard {
     flex-wrap: nowrap !important;
